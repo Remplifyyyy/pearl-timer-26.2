@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "pearltimer",
+	"version": "${version}",
+	"name": "Remplify Pearl Timer",
+	"description": "Shows a countdown above other players' heads after they throw an ender pearl, so you know when their pearl cooldown ends.",
+	"authors": [
+		"Remplify"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/pearltimer/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.remplify.pearltimer.PearlTimerClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "pearltimer.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.0",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
